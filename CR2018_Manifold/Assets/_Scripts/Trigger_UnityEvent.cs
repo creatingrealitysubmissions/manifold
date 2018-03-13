@@ -7,14 +7,15 @@ namespace CR18_Manifold
 {
     public class Trigger_UnityEvent : MonoBehaviour
     {
+        public string TriggerTag = "Player";
         public UnityEvent OnEnterEvent;
         public UnityEvent OnExitEvent;
 
-        public string TriggerTag = "Player";
         private GameObject cachedGameObject;
 
         private void OnTriggerEnter(Collider other)
         {
+            if (!enabled) return;
             if (cachedGameObject) return;
             if (other.CompareTag(TriggerTag))
             {
@@ -25,13 +26,14 @@ namespace CR18_Manifold
         }
         private void OnTriggerExit(Collider other)
         {
+            if (!enabled) return;
             if (!cachedGameObject) return;
             if (other.CompareTag(TriggerTag))
             {
                 var go = other.attachedRigidbody ? other.attachedRigidbody.gameObject : other.gameObject;
                 if (go == cachedGameObject)
                 {
-                    OnEnterEvent.Invoke();
+                    OnExitEvent.Invoke();
                     cachedGameObject = null;
                 }
             }
