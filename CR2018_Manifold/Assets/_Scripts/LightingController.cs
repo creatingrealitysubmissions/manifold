@@ -8,5 +8,10 @@ namespace CR18_Manifold
         {
             RenderSettings.fog = state;
         }
+
+        public void SetSkybox(Material sbMaterial)
+        {
+            RenderSettings.skybox = sbMaterial;
+        }
     }
 }
