@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: White_StencilGeo_0
-  m_Shader: {fileID: 4800000, guid: 4e981fc70928e8a4b8ea21eca0043e34, type: 3}
+  m_Name: Wall_Geo
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: fb037c7b29046d9498cdace8ee042a71, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -60,9 +60,9 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.02
+    - _Glossiness: 0.317
     - _GlossyReflections: 1
-    - _Metallic: 0.317
+    - _Metallic: 0.02
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
