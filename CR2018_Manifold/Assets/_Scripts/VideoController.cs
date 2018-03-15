@@ -9,6 +9,8 @@ public class VideoController : MonoBehaviour
     public Material SkyboxMaterial;
     public bool PlayOnStart = false;
     public bool PlayOnEnable = false;
+    public bool PlayAudio = false;
+    public AudioSource AudSource;
     public UnityEvent OnStartVideo;
     public UnityEvent OnEndVideo;
 
@@ -33,6 +35,10 @@ public class VideoController : MonoBehaviour
         RenderSettings.skybox = SkyboxMaterial;
 
         VidPlayer.Play();
+        if (PlayAudio)
+        {
+            AudSource.Play();
+        }
         //VidPlayer.
         OnStartVideo.Invoke();
     }
