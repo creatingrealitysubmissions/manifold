@@ -40594,7 +40594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1263942201
 Transform:
   m_ObjectHideFlags: 0
@@ -50790,7 +50790,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 525581705}
         m_MethodName: Play
@@ -58113,7 +58113,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh22358
+  m_Name: pb_Mesh75674
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
