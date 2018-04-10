@@ -46,9 +46,7 @@ public class RoomExtenderMenu : MonoBehaviour
 
     private void SetExtenderValue(float value)
     {
-        Debug.Log("Value = " + value);
-        float extenderValue = Mathf.Lerp(0f, 10f, value);//Mathf.InverseLerp(0f, 10f, value);
-        Debug.Log("ExtValue = " + extenderValue);
+        float extenderValue = Mathf.Lerp(0f, 10f, value);
         RoomExtender.additionalMovementMultiplier = extenderValue;
         ValueText.text = RoomExtender.additionalMovementMultiplier.ToString();
     }
